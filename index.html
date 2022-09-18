@@ -8,5 +8,96 @@
 </head>
 <body>
     <h1>Logical Operators</h1>
+    
+
+    <form onsubmit="regi(); return false">
+        Enter Gender : <input type="text" name="" id="indus"> <br> <br>
+
+
+        <Button>Check Registration</Button>
+
+
+<h1 id="reg"></h1>
+    </form>
+
+
+    <script>
+        function regi(){
+            let indus = +document.querySelector('#indus').value;
+            if(indus >= 25){
+                let reg = "Allowed for Checkup Today"
+                document.querySelector('#reg').innerHTML=reg;
+            }
+            else{
+                let reg = "Not Allowed"
+                document.querySelector('#reg').innerHTML=reg;
+            }
+        }
+
+
+
+
+    </script>
+        <!-- // Logical AND  &&
+        // Boolean && Boolean = Boolean
+        // true && true = true
+        // false && true = false
+        // true && false = false
+        // false && false = false
+
+
+        // LOGICAL AND (&&)
+
+
+        // let temp = 25;
+
+        // if(temp < 20 ){
+        //     console.log('Its Cold Outside, Carry Jackets');
+        // }
+        // else if(temp > 20 && temp < 25){
+        //     console.log('Your weather must be pleasant, carry jacket when Riding');
+        // }
+        // else if(temp >= 25 && temp < 31){
+        //     console.log('Your weather looks quite Normal');
+        // }
+        // else if(temp > 32){
+        //     console.log('It Hot Outside, Be carefull');
+        // }
+
+        // Logical OR  ||
+        // Boolean || Boolean = Boolean
+        // true || true = true
+        // false || true = true
+        // true || false = true
+        // false || false = false
+
+        // LOGICAL OR ||
+
+            // if OR operator will find first one true it will not check the other one
+
+        // let age = 30;
+        // let education = 16;
+        // if(age <= 18 || education >= 16){
+        //     console.log('You are eligible');
+        // }
+
+
+        // Logical NOT  !
+        // !true = false
+        // !false  = true
+
+        // let isOpen = true;
+
+        // if(!isOpen){
+        //     console.log('Opening the door');
+        // }
+
+        // let portNumber = undefined || 3000;
+
+        // let portNumber = "car" && 45 && 23;
+
+        // console.log(portNumber); -->
+
+
 </body>
 </html>
